@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface MusicaRepository extends JpaRepository<Musica, Long> {
 
-    List<Musica> findByContaingNomeIgnoreCase(String nome);
+    List<Musica> findByNomeContainingIgnoreCase(String nome);
 }

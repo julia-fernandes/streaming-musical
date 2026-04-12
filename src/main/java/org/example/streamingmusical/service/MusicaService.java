@@ -24,7 +24,7 @@ public class MusicaService {
     }
 
     public List<Musica> buscarMusica(String nome){
-        return repository.findByContaingNomeIgnoreCase(nome);
+        return repository.findByNomeContainingIgnoreCase(nome);
     }
 
     public Musica salvarMusica(Musica musica){
